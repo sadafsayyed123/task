@@ -1,0 +1,26 @@
+public class task1a
+{  
+    public static void Pattern1(int n) 
+    {  
+    	int i,j,k;
+        for (i=0; i<n; i++)                 //outer loop for number of rows(n)
+    { 
+                
+            for (j=n; j>=i; j--)            //inner loop for space
+            { 
+                System.out.print(" ");      //print space
+            } 
+            for (k=0; k<=i; k++)            //inner loop for printing star
+            {
+            System.out.print(" *");         //print star
+            } 
+            System.out.println();           //for next row
+    }
+    }
+    public static void main(String args[])  //driver function
+    { 
+        int n = 5; 
+        Pattern1(n); 
+        
+    }
+    } 
